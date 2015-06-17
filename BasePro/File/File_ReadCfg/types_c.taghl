@@ -1,0 +1,6 @@
+syn keyword CTagsStructure ENTRY
+syn keyword CTagsGlobalVariable ENTRY IniFile Result CurEntry Entry
+syn keyword CTagsFunction AddSectionAndpKey FreeAllMem AddpKey WriteInt OpenIniFile strupr DeleteKey WriteString ReadBool FindpKey AddItemAt MakeNewEntry main GetProfileString CloseIniFile WriteDouble WriteBool a_trim r_trim FreeMem FindSection l_trim ReadInt AddItem AddOrAltConfig ReadDouble ReadString WriteIniFile
+syn keyword CTagsType EFIND bool cchr
+syn keyword CTagsDefinedName ArePtrValid INI_REMOVE_CR CCHR_H FALSE INIFILE_TEST_THIS_FILE true DONT_HAVE_STRUPR tpKEYVALUE tpCOMMENT tpNULL INIFILE_H KEYVALLEN tpSECTION false TRUE
+

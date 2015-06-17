@@ -1,0 +1,47 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Des	Src/msg_util.h	/^    long Des;   \/\/消息buf结构体必须要有的成员，且必须大于0$/;"	m	struct:_MSG_BUF
+MAX_SHARE_PROC	Src/share_mem.h	13;"	d
+MSG_BUF	Src/msg_util.h	/^}MSG_BUF;$/;"	t	typeref:struct:_MSG_BUF
+MSG_KEY	Src/msg_util.h	8;"	d
+MSG_TYPE_END	Src/msg_util.h	/^    MSG_TYPE_END$/;"	e	enum:__anon1
+MSG_TYPE_MSG1	Src/msg_util.h	/^    MSG_TYPE_MSG1,$/;"	e	enum:__anon1
+MSG_TYPE_MSG2	Src/msg_util.h	/^    MSG_TYPE_MSG2,$/;"	e	enum:__anon1
+MSG_TYPE_MSG3	Src/msg_util.h	/^    MSG_TYPE_MSG3,$/;"	e	enum:__anon1
+MSG_TYPE_MSG4	Src/msg_util.h	/^    MSG_TYPE_MSG4,$/;"	e	enum:__anon1
+MSG_TYPE_MSG5	Src/msg_util.h	/^    MSG_TYPE_MSG5,$/;"	e	enum:__anon1
+MSG_TYPE_START	Src/msg_util.h	/^    MSG_TYPE_START = 0,$/;"	e	enum:__anon1
+Msg_Init	Src/msg_util.c	/^int Msg_Init( int msgKey )$/;"	f
+Msg_Kill	Src/msg_util.c	/^int Msg_Kill( int qid )$/;"	f
+Msg_Rsv	Src/msg_util.c	/^int Msg_Rsv( int qid, int msg_type, void *pdata , int size )$/;"	f
+Msg_Send_Rsv	Src/msg_util.c	/^int Msg_Send_Rsv( int qid, int msg_type, void *pdata , int size )$/;"	f
+Msg_Send	Src/msg_util.c	/^int Msg_Send( int qid, void *pdata , int size )$/;"	f
+PROC_MEM_KEY	Src/share_mem.h	15;"	d
+PROC_MEM_SIZE	Src/share_mem.h	12;"	d
+SYS_MEM_KEY	ShmRecvTest/ShmRcvTest.c	6;"	d	file:
+SYS_MEM_KEY	ShmSendTest/ShmSndTest.c	6;"	d	file:
+SYS_MSG_KEY	ShmRecvTest/ShmRcvTest.c	5;"	d	file:
+SYS_MSG_KEY	ShmSendTest/ShmSndTest.c	5;"	d	file:
+ShareMemInit	Src/share_mem.c	/^int ShareMemInit(int key)$/;"	f
+ShareMemRead	Src/share_mem.c	/^void ShareMemRead(int offset,void *buf, int length)$/;"	f
+ShareMemWrite	Src/share_mem.c	/^void ShareMemWrite(int offset,void *buf, int length)$/;"	f
+Src	Src/msg_util.h	/^    int  Src;   \/\/自定义，发送者id$/;"	m	struct:_MSG_BUF
+_MSG_BUF	Src/msg_util.h	/^typedef struct _MSG_BUF{$/;"	s
+__DEBUG	Src/msg_util.c	21;"	d	file:
+__D	Src/msg_util.c	24;"	d	file:
+__D	Src/msg_util.c	26;"	d	file:
+__D	Src/share_mem.c	22;"	d	file:
+__D	Src/share_mem.c	24;"	d	file:
+__E	Src/msg_util.c	30;"	d	file:
+__E	Src/msg_util.c	32;"	d	file:
+__MSG_UTIL_H___	Src/msg_util.h	2;"	d
+__SHARE_MEM_H__	Src/share_mem.h	2;"	d
+cmd	Src/msg_util.h	/^    int  cmd;   \/\/自定义，数据区，根据需要定义$/;"	m	struct:_MSG_BUF
+main	ShmRecvTest/ShmRcvTest.c	/^int main()$/;"	f
+main	ShmSendTest/ShmSndTest.c	/^int main()$/;"	f
+mid	Src/share_mem.c	/^static int mid;$/;"	v	file:
+pShareMemInit	Src/share_mem.c	/^int pShareMemInit(int key)$/;"	f

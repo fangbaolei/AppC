@@ -1,0 +1,7 @@
+syn keyword CTagsStructure _MSG_BUF
+syn keyword CTagsGlobalVariable mid
+syn keyword CTagsEnumerationValue MSG_TYPE_MSG5 MSG_TYPE_MSG4 MSG_TYPE_MSG1 MSG_TYPE_MSG3 MSG_TYPE_MSG2 MSG_TYPE_END MSG_TYPE_START
+syn keyword CTagsFunction Msg_Rsv Msg_Send pShareMemInit Msg_Init ShareMemRead ShareMemInit ShareMemWrite Msg_Send_Rsv Msg_Kill main
+syn keyword CTagsType MSG_BUF
+syn keyword CTagsDefinedName __E __D MAX_SHARE_PROC PROC_MEM_SIZE MSG_KEY SYS_MEM_KEY __SHARE_MEM_H__ PROC_MEM_KEY __MSG_UTIL_H___ SYS_MSG_KEY __DEBUG
+

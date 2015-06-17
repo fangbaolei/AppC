@@ -1,0 +1,35 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Des	Src/msg_util.h	/^    long Des;   \/\/消息buf结构体必须要有的成员，且必须大于0$/;"	m	struct:_MSG_BUF
+MSG_BUF	Src/msg_util.h	/^}MSG_BUF;$/;"	t	typeref:struct:_MSG_BUF
+MSG_TYPE_END	Src/msg_util.h	/^    MSG_TYPE_END$/;"	e	enum:__anon1
+MSG_TYPE_MSG1	Src/msg_util.h	/^    MSG_TYPE_MSG1,$/;"	e	enum:__anon1
+MSG_TYPE_MSG2	Src/msg_util.h	/^    MSG_TYPE_MSG2,$/;"	e	enum:__anon1
+MSG_TYPE_MSG3	Src/msg_util.h	/^    MSG_TYPE_MSG3,$/;"	e	enum:__anon1
+MSG_TYPE_MSG4	Src/msg_util.h	/^    MSG_TYPE_MSG4,$/;"	e	enum:__anon1
+MSG_TYPE_MSG5	Src/msg_util.h	/^    MSG_TYPE_MSG5,$/;"	e	enum:__anon1
+MSG_TYPE_START	Src/msg_util.h	/^    MSG_TYPE_START = 0,$/;"	e	enum:__anon1
+MsgInit	MsgSendTest/MsgSndTest.c	/^int MsgInit(MSG_BUF *msg, int Val, int MsgKey)$/;"	f
+MsgRecv	MsgRecvTest/MsgRcvTest.c	/^int MsgRecv(int MsgKey)$/;"	f
+Msg_Init	Src/msg_util.c	/^int Msg_Init( int msgKey )$/;"	f
+Msg_Kill	Src/msg_util.c	/^int Msg_Kill( int qid )$/;"	f
+Msg_Rsv	Src/msg_util.c	/^int Msg_Rsv( int qid, int msg_type, void *pdata , int size )$/;"	f
+Msg_Send_Rsv	Src/msg_util.c	/^int Msg_Send_Rsv( int qid, int msg_type, void *pdata , int size )$/;"	f
+Msg_Send	Src/msg_util.c	/^int Msg_Send( int qid, void *pdata , int size )$/;"	f
+SYS_MSG_KEY1	Src/msg_util.h	9;"	d
+SYS_MSG_KEY	Src/msg_util.h	8;"	d
+Src	Src/msg_util.h	/^    int  Src;   \/\/自定义，发送者id$/;"	m	struct:_MSG_BUF
+_MSG_BUF	Src/msg_util.h	/^typedef struct _MSG_BUF{$/;"	s
+__DEBUG	Src/msg_util.c	21;"	d	file:
+__D	Src/msg_util.c	24;"	d	file:
+__D	Src/msg_util.c	26;"	d	file:
+__E	Src/msg_util.c	30;"	d	file:
+__E	Src/msg_util.c	32;"	d	file:
+__MSG_UTIL_H___	Src/msg_util.h	2;"	d
+cmd	Src/msg_util.h	/^    int  cmd;   \/\/自定义，数据区，根据需要定义$/;"	m	struct:_MSG_BUF
+main	MsgRecvTest/MsgRcvTest.c	/^int main()$/;"	f
+main	MsgSendTest/MsgSndTest.c	/^int main(void)$/;"	f

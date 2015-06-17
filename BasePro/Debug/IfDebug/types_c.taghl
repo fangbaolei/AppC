@@ -1,0 +1,3 @@
+syn keyword CTagsFunction main
+syn keyword CTagsDefinedName IPCAM_ERROR IPCAM_TRACE IPCAM_DEBUG __DEBUG__ IPCAM_ASSERT
+

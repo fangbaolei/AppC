@@ -1,0 +1,70 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AddItemAt	ReadWriteCfgCpp/ReadCfgFile.cpp	/^AddItemAt (struct ENTRY * EntryAt, char Mode, cchr * Text)$/;"	f
+AddItem	ReadWriteCfgCpp/ReadCfgFile.cpp	/^AddItem (char Type, cchr * Text)$/;"	f
+AddOrAltConfig	ReadCfgFile.c	/^AddOrAltConfig(char *conf_path,char *conf_name,char *config_buff)$/;"	f
+AddSectionAndpKey	ReadWriteCfgCpp/ReadCfgFile.cpp	/^AddSectionAndpKey (cchr * Section, cchr * pKey, cchr * Value)$/;"	f
+AddpKey	ReadWriteCfgCpp/ReadCfgFile.cpp	/^AddpKey (struct ENTRY *SecEntry, cchr * pKey, cchr * Value)$/;"	f
+ArePtrValid	ReadWriteCfgCpp/ReadCfgFile.h	55;"	d
+CCHR_H	ReadWriteCfgCpp/ReadCfgFile.h	19;"	d
+CloseIniFile	ReadWriteCfgCpp/ReadCfgFile.cpp	/^CloseIniFile (void)$/;"	f
+Comment	ReadWriteCfgCpp/ReadCfgFile.h	/^   char          Comment [255];$/;"	m	struct:__anon1
+CurEntry	ReadWriteCfgCpp/ReadCfgFile.cpp	/^struct ENTRY *CurEntry = NULL;$/;"	v	typeref:struct:ENTRY
+DONT_HAVE_STRUPR	ReadWriteCfgCpp/ReadCfgFile.h	15;"	d
+DeleteKey	ReadWriteCfgCpp/ReadCfgFile.cpp	/^bool DeleteKey (cchr *Section, cchr *pKey)$/;"	f
+EFIND	ReadWriteCfgCpp/ReadCfgFile.h	/^} EFIND;$/;"	t	typeref:struct:__anon1
+ENTRY	ReadWriteCfgCpp/ReadCfgFile.h	/^struct ENTRY$/;"	s
+ENTRY	ReadWriteCfgCpp/ReadCfgFile.h	/^} ENTRY;$/;"	v	typeref:struct:ENTRY
+Entry	ReadWriteCfgCpp/ReadCfgFile.cpp	/^struct ENTRY *Entry = NULL;$/;"	v	typeref:struct:ENTRY
+FALSE	ReadWriteCfgCpp/ReadCfgFile.cpp	66;"	d	file:
+FALSE	ReadWriteCfgCpp/ReadCfgFile.h	28;"	d
+FindSection	ReadWriteCfgCpp/ReadCfgFile.cpp	/^FindSection (cchr * Section)$/;"	f
+FindpKey	ReadWriteCfgCpp/ReadCfgFile.cpp	/^FindpKey (cchr * Section, cchr * pKey, EFIND * List)$/;"	f
+FreeAllMem	ReadWriteCfgCpp/ReadCfgFile.cpp	/^FreeAllMem (void)$/;"	f
+FreeMem	ReadWriteCfgCpp/ReadCfgFile.cpp	/^FreeMem (void *Ptr)$/;"	f
+GetProfileString	ReadCfgFile.c	/^int GetProfileString(char *profile, char *AppName, char *KeyName, char *KeyVal )$/;"	f
+INIFILE_H	ReadWriteCfgCpp/ReadCfgFile.h	11;"	d
+INIFILE_TEST_THIS_FILE	ReadWriteCfgCpp/ReadCfgFile.cpp	683;"	d	file:
+INI_REMOVE_CR	ReadWriteCfgCpp/ReadCfgFile.h	14;"	d
+IniFile	ReadWriteCfgCpp/ReadCfgFile.cpp	/^FILE *IniFile;$/;"	v
+KEYVALLEN	ReadCfgFile.h	1;"	d
+KeyText	ReadWriteCfgCpp/ReadCfgFile.h	/^   char          KeyText [128];$/;"	m	struct:__anon1
+MakeNewEntry	ReadWriteCfgCpp/ReadCfgFile.cpp	/^MakeNewEntry (void)$/;"	f
+OpenIniFile	ReadWriteCfgCpp/ReadCfgFile.cpp	/^OpenIniFile (cchr * FileName)$/;"	f
+ReadBool	ReadWriteCfgCpp/ReadCfgFile.cpp	/^ReadBool (cchr * Section, cchr * pKey, bool Default)$/;"	f
+ReadDouble	ReadWriteCfgCpp/ReadCfgFile.cpp	/^ReadDouble (cchr * Section, cchr * pKey, double Default)$/;"	f
+ReadInt	ReadWriteCfgCpp/ReadCfgFile.cpp	/^ReadInt (cchr * Section, cchr * pKey, int Default)$/;"	f
+ReadString	ReadWriteCfgCpp/ReadCfgFile.cpp	/^ReadString (cchr * Section, cchr * pKey, cchr * Default)$/;"	f
+Result	ReadWriteCfgCpp/ReadCfgFile.cpp	/^char Result[255] =$/;"	v
+TRUE	ReadWriteCfgCpp/ReadCfgFile.cpp	67;"	d	file:
+TRUE	ReadWriteCfgCpp/ReadCfgFile.h	26;"	d
+Text	ReadWriteCfgCpp/ReadCfgFile.h	/^   char  *Text;$/;"	m	struct:ENTRY
+Type	ReadWriteCfgCpp/ReadCfgFile.h	/^   char   Type;$/;"	m	struct:ENTRY
+ValText	ReadWriteCfgCpp/ReadCfgFile.h	/^   char          ValText [128];$/;"	m	struct:__anon1
+WriteBool	ReadWriteCfgCpp/ReadCfgFile.cpp	/^WriteBool (cchr * Section, cchr * pKey, bool Value)$/;"	f
+WriteDouble	ReadWriteCfgCpp/ReadCfgFile.cpp	/^WriteDouble (cchr * Section, cchr * pKey, double Value)$/;"	f
+WriteIniFile	ReadWriteCfgCpp/ReadCfgFile.cpp	/^WriteIniFile (const char *FileName)$/;"	f
+WriteInt	ReadWriteCfgCpp/ReadCfgFile.cpp	/^WriteInt (cchr * Section, cchr * pKey, int Value)$/;"	f
+WriteString	ReadWriteCfgCpp/ReadCfgFile.cpp	/^WriteString (cchr * Section, cchr * pKey, cchr * Value)$/;"	f
+a_trim	ReadCfgFile.c	/^char * a_trim(char * szOutput, const char * szInput)$/;"	f
+bool	ReadWriteCfgCpp/ReadCfgFile.h	/^typedef char bool;$/;"	t
+cchr	ReadWriteCfgCpp/ReadCfgFile.h	/^typedef const char cchr;$/;"	t
+false	ReadWriteCfgCpp/ReadCfgFile.h	27;"	d
+l_trim	ReadCfgFile.c	/^char * l_trim(char * szOutput, const char *szInput)$/;"	f
+main	ReadCfgFile.c	/^int main()$/;"	f
+main	ReadWriteCfgCpp/ReadCfgFile.cpp	/^int main (void)$/;"	f
+pKey	ReadWriteCfgCpp/ReadCfgFile.h	/^   struct ENTRY *pKey;$/;"	m	struct:__anon1	typeref:struct:__anon1::ENTRY
+pNext	ReadWriteCfgCpp/ReadCfgFile.h	/^   struct ENTRY *pNext;$/;"	m	struct:ENTRY	typeref:struct:ENTRY::ENTRY
+pPrev	ReadWriteCfgCpp/ReadCfgFile.h	/^   struct ENTRY *pPrev;$/;"	m	struct:ENTRY	typeref:struct:ENTRY::ENTRY
+pSec	ReadWriteCfgCpp/ReadCfgFile.h	/^   struct ENTRY *pSec;$/;"	m	struct:__anon1	typeref:struct:__anon1::ENTRY
+r_trim	ReadCfgFile.c	/^char *r_trim(char *szOutput, const char *szInput)$/;"	f
+strupr	ReadWriteCfgCpp/ReadCfgFile.cpp	/^void strupr( char *str )$/;"	f
+tpCOMMENT	ReadWriteCfgCpp/ReadCfgFile.h	34;"	d
+tpKEYVALUE	ReadWriteCfgCpp/ReadCfgFile.h	33;"	d
+tpNULL	ReadWriteCfgCpp/ReadCfgFile.h	31;"	d
+tpSECTION	ReadWriteCfgCpp/ReadCfgFile.h	32;"	d
+true	ReadWriteCfgCpp/ReadCfgFile.h	25;"	d

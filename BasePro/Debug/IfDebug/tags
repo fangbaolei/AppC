@@ -1,0 +1,16 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+IPCAM_ASSERT	PrintfDebug.c	21;"	d	file:
+IPCAM_ASSERT	PrintfDebug.c	26;"	d	file:
+IPCAM_DEBUG	PrintfDebug.c	19;"	d	file:
+IPCAM_DEBUG	PrintfDebug.c	24;"	d	file:
+IPCAM_ERROR	PrintfDebug.c	20;"	d	file:
+IPCAM_ERROR	PrintfDebug.c	25;"	d	file:
+IPCAM_TRACE	PrintfDebug.c	14;"	d	file:
+IPCAM_TRACE	PrintfDebug.c	23;"	d	file:
+__DEBUG__	PrintfDebug.c	11;"	d	file:
+main	PrintfDebug.c	/^int main(int argc, char **argv) $/;"	f

@@ -1,0 +1,27 @@
+
+include ../../config.local
+
+CGI_LIB = MOD_Onvif.a
+
+CGI_OBJ =\
+	onvifDeviceManagercallback.o\
+	onvifDiscoverycallback.o\
+	onvifImageingcallback.o\
+	onvifMediacallback.o\
+	onvifPtz.o
+
+
+all:  $(CGI_LIB)
+
+
+$(CGI_LIB): $(CGI_OBJ)
+	$(AR) cr  $(CGI_LIB)  $(CGI_OBJ)
+	cp $(CGI_LIB) ../../$(LIBDIR)
+
+%.o: %.c
+	$(CC) -I$(LSP_INCLUDE_DIR) -I./ -I../../include   -c $< 
+install:
+	cp -rf *.a ../$(LIBDIR) 
+clean:
+	rm -rf $(CGI_LIB) $(CGI_OBJ) ../../$(LIBDIR)/$(CGI_LIB)
+	

@@ -1,0 +1,585 @@
+cscope 15 /home/hejunying/AppC/BasePro/LinkList -q 0000000041 0000002744
+	@list.h
+
+32 #iâdeà
+_HPT_LIST_H_
+
+
+33 
+	#_HPT_LIST_H_
+
+
+	)
+
+35 #iâdeà
+_LINUX_LIST_H
+
+
+37 #iâdeà
+HPT_INLINE
+
+
+38 
+	#HPT_INLINE
+ 
+__šlše
+
+
+	)
+
+41 
+	tHPT_UPTR
+;
+
+43 
+	sli¡_h—d
+ {
+
+44 
+li¡_h—d
+ *
+	mÃxt
+, *
+	m´ev
+;
+
+47 
+	#LIST_HEAD_INIT
+(
+Çme
+è{ &Òame), &Òameè}
+
+	)
+
+49 
+	#INIT_LIST_HEAD
+(
+±r
+èdØ{ (±r)->
+Ãxt
+ = (±r); (±r)->
+´ev
+ = (±r); } 0)
+
+	)
+
+51 
+HPT_INLINE
+ 
+	$__li¡_add
+(
+li¡_h—d
+ * 
+_Ãw
+, li¡_h—d * 
+´ev
+, li¡_h—d * 
+Ãxt
+)
+
+53 
+Ãxt
+->
+´ev
+ = 
+_Ãw
+;
+
+54 
+_Ãw
+->
+Ãxt
+ =‚ext;
+
+55 
+_Ãw
+->
+´ev
+ =…rev;
+
+56 
+´ev
+->
+Ãxt
+ = 
+_Ãw
+;
+
+57 
+	}
+}
+
+59 
+HPT_INLINE
+ 
+	$li¡_add
+(
+li¡_h—d
+ *
+_Ãw
+, li¡_h—d *
+h—d
+)
+
+61 
+	`__li¡_add
+(
+_Ãw
+, 
+h—d
+, h—d->
+Ãxt
+);
+
+62 
+	}
+}
+
+64 
+HPT_INLINE
+ 
+	$li¡_add_ž
+(
+li¡_h—d
+ *
+_Ãw
+, li¡_h—d *
+h—d
+)
+
+66 
+	`__li¡_add
+(
+_Ãw
+, 
+h—d
+->
+´ev
+, head);
+
+67 
+	}
+}
+
+69 
+HPT_INLINE
+ 
+	$__li¡_d–
+(
+li¡_h—d
+ * 
+´ev
+, li¡_h—d * 
+Ãxt
+)
+
+71 
+Ãxt
+->
+´ev
+ =…rev;
+
+72 
+´ev
+->
+Ãxt
+ =‚ext;
+
+73 
+	}
+}
+
+75 
+HPT_INLINE
+ 
+	$li¡_d–
+(
+li¡_h—d
+ *
+’Œy
+)
+
+77 
+	`__li¡_d–
+(
+’Œy
+->
+´ev
+,ƒÁry->
+Ãxt
+);
+
+78 
+	}
+}
+
+80 
+HPT_INLINE
+ 
+	$li¡_d–_š™
+(
+li¡_h—d
+ *
+’Œy
+)
+
+82 
+	`__li¡_d–
+(
+’Œy
+->
+´ev
+,ƒÁry->
+Ãxt
+);
+
+83 
+	`INIT_LIST_HEAD
+(
+’Œy
+);
+
+84 
+	}
+}
+
+86 
+šlše
+ 
+	$li¡_move
+(
+li¡_h—d
+ *
+li¡
+, li¡_h—d *
+h—d
+)
+
+88 
+	`__li¡_d–
+(
+li¡
+->
+´ev
+,†i¡->
+Ãxt
+);
+
+89 
+	`li¡_add
+(
+li¡
+, 
+h—d
+);
+
+90 
+	}
+}
+
+92 
+šlše
+ 
+	$li¡_move_ž
+(
+li¡_h—d
+ *
+li¡
+,
+
+93 
+li¡_h—d
+ *
+h—d
+)
+
+95 
+	`__li¡_d–
+(
+li¡
+->
+´ev
+,†i¡->
+Ãxt
+);
+
+96 
+	`li¡_add_ž
+(
+li¡
+, 
+h—d
+);
+
+97 
+	}
+}
+
+99 
+HPT_INLINE
+ 
+	$li¡_em±y
+(
+li¡_h—d
+ *
+h—d
+)
+
+101  
+h—d
+->
+Ãxt
+ == head;
+
+102 
+	}
+}
+
+104 
+HPT_INLINE
+ 
+	$__li¡_¥liû
+(
+li¡_h—d
+ *
+li¡
+,
+
+105 
+li¡_h—d
+ *
+h—d
+)
+
+107 
+li¡_h—d
+ *
+fœ¡
+ = 
+li¡
+->
+Ãxt
+;
+
+108 
+li¡_h—d
+ *
+Ï¡
+ = 
+li¡
+->
+´ev
+;
+
+109 
+li¡_h—d
+ *
+©
+ = 
+h—d
+->
+Ãxt
+;
+
+111 
+fœ¡
+->
+´ev
+ = 
+h—d
+;
+
+112 
+h—d
+->
+Ãxt
+ = 
+fœ¡
+;
+
+114 
+Ï¡
+->
+Ãxt
+ = 
+©
+;
+
+115 
+©
+->
+´ev
+ = 
+Ï¡
+;
+
+116 
+	}
+}
+
+118 
+HPT_INLINE
+ 
+	$li¡_¥liû
+(
+li¡_h—d
+ *
+li¡
+, li¡_h—d *
+h—d
+)
+
+120 ià(!
+	`li¡_em±y
+(
+li¡
+))
+
+121 
+	`__li¡_¥liû
+(
+li¡
+, 
+h—d
+);
+
+122 
+	}
+}
+
+124 
+HPT_INLINE
+ 
+	$li¡_¥liû_š™
+(
+li¡_h—d
+ *
+li¡
+, li¡_h—d *
+h—d
+)
+
+126 ià(!
+	`li¡_em±y
+(
+li¡
+)) {
+
+127 
+	`__li¡_¥liû
+(
+li¡
+, 
+h—d
+);
+
+128 
+	`INIT_LIST_HEAD
+(
+li¡
+);
+
+130 
+	}
+}
+
+134 
+	#li¡_’Œy
+(
+±r
+, 
+ty³
+, 
+memb”
+) \
+
+135 ((
+ty³
+ *)(()(
+±r
+)-(()(&(Ñy³ *)1)->
+memb”
+è- 1)))
+
+	)
+
+137 
+	#li¡_fÜ_—ch
+(
+pos
+, 
+h—d
+) \
+
+138 
+pos
+ = (
+h—d
+)->
+Ãxt
+;…o !ð(h—d);…o ðpos->Ãxt)
+
+	)
+
+140 
+	#li¡_fÜ_—ch_§ã
+(
+pos
+, 
+n
+, 
+h—d
+) \
+
+141 
+pos
+ = (
+h—d
+)->
+Ãxt
+, 
+n
+ =…os->next;…os != (head); \
+
+142 
+pos
+ = 
+n
+,‚ =…os->
+Ãxt
+)
+
+	)
+
+144 
+	#g‘_fœ¡_™em
+(
+©ched
+, 
+ty³
+, 
+memb”
+) \
+
+145 ((
+ty³
+ *)((*)((
+©ched
+)->
+Ãxt
+)-(
+HPT_UPTR
+)(&(Ñy³ *)0)->
+memb”
+)))
+
+	)
+
+	@
+1
+.
+1
+/usr/include
+1
+7
+list.h

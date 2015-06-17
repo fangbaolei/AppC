@@ -1,0 +1,14 @@
+export CC:=$(CROSS)gcc
+export CPP:=$(CROSS)g++
+export AR:=$(CROSS)ar
+
+CFLAGS := -Wall -O2 -fPIC
+CFLAGS += $(INC_FLAGS) 
+
+#找出当前目录下所有的.c和.cpp文件
+CSOURCE :=$(shell find . -type f -name "*.c")
+
+#生成.c和.cpp文件对应的.o文件
+COBJS :=$(subst .c,.o,$(CSOURCE))
+
+CFLAGS += -I../Src

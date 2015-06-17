@@ -1,0 +1,145 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AV_CMD	P2P_FreeIp.h	/^   }AV_CMD ,  *PAV_CMD;$/;"	t	typeref:struct:__anon4
+AV_FILE_PATH	P2P_FreeIp.h	20;"	d
+AV_HEADER_LEN	P2P_FreeIp.h	19;"	d
+AV_VHD	P2P_FreeIp.h	/^}AV_VHD;$/;"	t	typeref:struct:__anon3
+BACKLOG	P2P_FreeIp.h	21;"	d
+ClientDisconnect	P2P_FreeIp.c	/^int ClientDisconnect(char *data) \/\/对端主动关闭连接$/;"	f
+CreatThread	P2P_FreeIp.c	/^int CreatThread(sthread func,void* param)$/;"	f
+DATABASE_FILE	P2P_FreeIp.h	26;"	d
+FRAME_BUF_SIZE	P2P_FreeIp.h	18;"	d
+FREE_IP_ADDR	P2P_FreeIp.h	27;"	d
+GetFreeIpInfo	P2P_FreeIp.c	/^int GetFreeIpInfo(USER_INFO *UserInfo)$/;"	f
+HandleCommandCallback	P2psdkapp.h	/^typedef int (*HandleCommandCallback)(P2pCmdType cmd,char* data,int len);$/;"	t
+HandleCommand	P2P_FreeIp.c	/^int HandleCommand(P2pCmdType cmd,char* data,int len)$/;"	f
+MAX_MSG_DATA_LEN	P2PSDK.h	13;"	d
+MP2pMediainfo	P2psdkapp.h	/^}P2pMediainfo,*MP2pMediainfo;$/;"	t	typeref:struct:m_mediainfo
+MsgType	P2PSDK.h	/^}MsgType;$/;"	t	typeref:enum:__anon15
+Msg_Data	P2psdkapp.h	/^   Msg_Data,  \/\/ 消息数据 $/;"	e	enum:__anon2
+NetMsgResHeader	P2PSDK.h	/^}PP_PACKED NetMsgResHeader;$/;"	t	typeref:struct:__anon6
+NetMsgRes	P2PSDK.h	/^}PP_PACKED NetMsgRes;$/;"	t	typeref:struct:_NetMsgRes
+NetMsg	P2PSDK.h	/^}PP_PACKED NetMsg;$/;"	t	typeref:struct:_NetMsg
+P2P_CLIENT_DISCONNECT	P2psdkapp.h	/^    P2P_CLIENT_DISCONNECT = 4,$/;"	e	enum:__anon1
+P2P_FrameHeader	P2PSDK.h	/^}PP_PACKED P2P_FrameHeader;$/;"	t	typeref:struct:__anon7
+P2P_PLAY_REAL_STREAM	P2psdkapp.h	/^    P2P_PLAY_REAL_STREAM = 0,$/;"	e	enum:__anon1
+P2P_PLAY_RELAY_STREAM	P2psdkapp.h	/^    P2P_PLAY_RELAY_STREAM = 2 ,$/;"	e	enum:__anon1
+P2P_RELAYCLIENT_DISCONNECT	P2psdkapp.h	/^    P2P_RELAYCLIENT_DISCONNECT = 5,$/;"	e	enum:__anon1
+P2P_STOP_REAL_STREAM	P2psdkapp.h	/^    P2P_STOP_REAL_STREAM = 1,$/;"	e	enum:__anon1
+P2P_STOP_RELAY_STREAM	P2psdkapp.h	/^    P2P_STOP_RELAY_STREAM = 3,$/;"	e	enum:__anon1
+P2pCmdType	P2psdkapp.h	/^}P2pCmdType;$/;"	t	typeref:enum:__anon1
+P2pMediainfo	P2psdkapp.h	/^}P2pMediainfo,*MP2pMediainfo;$/;"	t	typeref:struct:m_mediainfo
+PAV_CMD	P2P_FreeIp.h	/^   }AV_CMD ,  *PAV_CMD;$/;"	t	typeref:struct:__anon4
+PB_BACKWARD	P2PSDK.h	/^	PB_BACKWARD				= 6,	\/\/快退$/;"	e	enum:__anon12
+PB_FORWARD	P2PSDK.h	/^	PB_FORWARD					= 5,	\/\/快进$/;"	e	enum:__anon12
+PB_PAUSE	P2PSDK.h	/^	PB_PAUSE			    	= 1,	\/\/暂停$/;"	e	enum:__anon12
+PB_PLAY	P2PSDK.h	/^	PB_PLAY		        		= 0,	\/\/播放$/;"	e	enum:__anon12
+PB_STEPBACKWARD	P2PSDK.h	/^	PB_STEPBACKWARD			= 4,	\/\/单帧退$/;"	e	enum:__anon12
+PB_STEPFORWARD	P2PSDK.h	/^	PB_STEPFORWARD				= 3,	\/\/单帧进$/;"	e	enum:__anon12
+PB_STOP	P2PSDK.h	/^	PB_STOP						= 2,	\/\/停止$/;"	e	enum:__anon12
+PLAY_REAL_STREAM_RES	P2PSDK.h	/^    PLAY_REAL_STREAM_RES =2 ,$/;"	e	enum:__anon15
+PLAY_REAL_STREAM	P2PSDK.h	/^    PLAY_REAL_STREAM = 1 ,$/;"	e	enum:__anon15
+PLAY_RECORD_CTRL_RES	P2PSDK.h	/^    PLAY_RECORD_CTRL_RES = 8,$/;"	e	enum:__anon15
+PLAY_RECORD_CTRL	P2PSDK.h	/^    PLAY_RECORD_CTRL = 7 ,    \/\/ 录像回放控制命令，包括暂停、快进快退等。$/;"	e	enum:__anon15
+PLAY_RECORD_STREAM_RES	P2PSDK.h	/^    PLAY_RECORD_STREAM_RES = 6,$/;"	e	enum:__anon15
+PLAY_RECORD_STREAM	P2PSDK.h	/^    PLAY_RECORD_STREAM = 5,   \/\/ 请求回放录像流消息类型$/;"	e	enum:__anon15
+PORT	P2P_FreeIp.h	22;"	d
+PP_PACKED	P2PSDK.h	17;"	d
+PP_PACKED	P2PSDK.h	19;"	d
+PP_PACKED	P2PSDK.h	21;"	d
+PlayBackControl	P2PSDK.h	/^}PlayBackControl;$/;"	t	typeref:enum:__anon12
+PlayRealStreamMsgRes	P2PSDK.h	/^}PP_PACKED PlayRealStreamMsgRes;$/;"	t	typeref:struct:__anon8
+PlayRealStreamMsg	P2PSDK.h	/^typedef struct PlayRealStreamMsg$/;"	s
+PlayRealStreamMsg	P2PSDK.h	/^}PlayRealStreamMsg;$/;"	t	typeref:struct:PlayRealStreamMsg
+PlayRealStream	P2P_FreeIp.c	/^int PlayRealStream(char *data)$/;"	f
+PlayRecordCtrlMsg	P2PSDK.h	/^}PP_PACKED PlayRecordCtrlMsg;$/;"	t	typeref:struct:__anon13
+PlayRecordCtrlResMsg	P2PSDK.h	/^}PP_PACKED PlayRecordCtrlResMsg;$/;"	t	typeref:struct:__anon14
+PlayRecordMsg	P2PSDK.h	/^}PP_PACKED PlayRecordMsg;$/;"	t	typeref:struct:__anon10
+PlayRecordResMsg	P2PSDK.h	/^}PP_PACKED PlayRecordResMsg;$/;"	t	typeref:struct:__anon11
+PlayRelayStream	P2P_FreeIp.c	/^int PlayRelayStream(char *data)$/;"	f
+RELAY_STREAM_DATA	P2PSDK.h	/^    RELAY_STREAM_DATA = 9,$/;"	e	enum:__anon15
+RealStream_Data	P2psdkapp.h	/^   RealStream_Data, \/\/ 实时流数据$/;"	e	enum:__anon2
+RecordStream_Data	P2psdkapp.h	/^   RecordStream_Data, \/\/ 录像流数据$/;"	e	enum:__anon2
+RecvRealStream	P2P_FreeIp.c	/^int RecvRealStream(int sock,int msessionid,int run)$/;"	f
+RecvRelayStream	P2P_FreeIp.c	/^int RecvRelayStream(int sock,int msessionid,int run)$/;"	f
+RecvSN	P2P_FreeIp.c	/^int RecvSN(int sock)$/;"	f
+RelayClientDisconnect	P2P_FreeIp.c	/^int RelayClientDisconnect(char *data)   \/\/对端主动关闭连接$/;"	f
+SERVER_IP	P2P_FreeIp.h	25;"	d
+SOL_SOCKET	P2P_FreeIp.h	23;"	d
+SO_REUSEADDR	P2P_FreeIp.h	24;"	d
+STOP_REAL_STREAM_RES	P2PSDK.h	/^    STOP_REAL_STREAM_RES =4  ,$/;"	e	enum:__anon15
+STOP_REAL_STREAM	P2PSDK.h	/^    STOP_REAL_STREAM = 3 ,$/;"	e	enum:__anon15
+SendRealStream	P2P_FreeIp.c	/^void *SendRealStream(void *mediainfo)$/;"	f
+SendRelayStream	P2P_FreeIp.c	/^void *SendRelayStream(void *mediainfo)$/;"	f
+SendStreamChn	P2P_FreeIp.c	/^int SendStreamChn(int sock,int StreamChn)$/;"	f
+SendUsrInfo	P2P_FreeIp.c	/^int SendUsrInfo(int sock,char *Usr,char *Pwd)$/;"	f
+StopRealStreamMsgRes	P2PSDK.h	/^}PP_PACKED StopRealStreamMsgRes;$/;"	t	typeref:struct:__anon9
+StopRealStreamMsg	P2PSDK.h	/^typedef struct StopRealStreamMsg$/;"	s
+StopRealStreamMsg	P2PSDK.h	/^}StopRealStreamMsg;$/;"	t	typeref:struct:StopRealStreamMsg
+StopRealStream	P2P_FreeIp.c	/^int StopRealStream(char *data)$/;"	f
+StopRelayStream	P2P_FreeIp.c	/^int StopRelayStream(char *data)  $/;"	f
+StreamType	P2psdkapp.h	/^}StreamType;$/;"	t	typeref:enum:__anon2
+TcpClientCreate	P2P_FreeIp.c	/^int TcpClientCreate(void)$/;"	f
+UNKOWN_MSG	P2PSDK.h	/^    UNKOWN_MSG =0, $/;"	e	enum:__anon15
+USER_INFO	P2P_FreeIp.h	/^}USER_INFO;$/;"	t	typeref:struct:__anon5
+_HEROSPEED_P2P_APP_MSG_DEF_H_	P2psdkapp.h	7;"	d
+_NetMsgRes	P2PSDK.h	/^typedef struct _NetMsgRes$/;"	s
+_NetMsg	P2PSDK.h	/^typedef struct _NetMsg$/;"	s
+__P2PSDK_H__	P2PSDK.h	7;"	d
+__SEND_FILE_h__	P2P_FreeIp.h	2;"	d
+bBufferSize	P2P_FreeIp.h	/^     unsigned long bBufferSize:15;       \/\/CMD$/;"	m	struct:__anon4
+bBuffer	P2P_FreeIp.h	/^     unsigned long bBuffer:1;              \/\/CMD               $/;"	m	struct:__anon4
+bCH	P2P_FreeIp.h	/^     unsigned long bCH:16;                 \/\/ 0$/;"	m	struct:__anon4
+bFrameRate	P2P_FreeIp.h	/^	unsigned long bFrameRate:2;\/\/帧率$/;"	m	struct:__anon3
+bFrameType	P2P_FreeIp.h	/^	unsigned long bFrameType:5;\/\/帧类型 1表示为P帧  5表示为I帧$/;"	m	struct:__anon3
+bIframe	P2PSDK.h	/^    unsigned char bIframe;    \/\/ 是否是关键帧。0： 非关键帧 1:关键帧$/;"	m	struct:__anon7
+bMediaType	P2P_FreeIp.h	/^	unsigned long bMediaType:1;\/\/A\/V$/;"	m	struct:__anon3
+bSize	P2P_FreeIp.h	/^	unsigned long bSize:22; \/\/帧长度$/;"	m	struct:__anon3
+bSubStream	P2P_FreeIp.h	/^	unsigned long bSubStream:2;\/\/子码流$/;"	m	struct:__anon3
+channelNo	P2PSDK.h	/^	short       channelNo;      \/\/ 通道号$/;"	m	struct:__anon10
+channelNo	P2PSDK.h	/^    short channelNo;  \/\/ 通道号$/;"	m	struct:PlayRealStreamMsg
+channelNo	P2PSDK.h	/^    short channelNo;  \/\/ 通道号$/;"	m	struct:StopRealStreamMsg
+channelNo	P2psdkapp.h	/^    short channelNo;  \/\/ 通道号(从1开始)	$/;"	m	struct:m_mediainfo
+ctrl	P2PSDK.h	/^    PlayBackControl ctrl;$/;"	m	struct:__anon13
+endTime	P2PSDK.h	/^	unsigned    endTime;		 \/\/ 结束时间$/;"	m	struct:__anon10
+frameType	P2PSDK.h	/^	short       frameType;		 \/\/ 帧类型(0:视频,1:音频,2:音视频) $/;"	m	struct:__anon10
+header	P2PSDK.h	/^    NetMsgResHeader header;$/;"	m	struct:__anon11
+header	P2PSDK.h	/^    NetMsgResHeader header;$/;"	m	struct:__anon14
+header	P2PSDK.h	/^    NetMsgResHeader header;$/;"	m	struct:__anon8
+header	P2PSDK.h	/^    NetMsgResHeader header;$/;"	m	struct:__anon9
+m_mediainfo	P2psdkapp.h	/^typedef struct  m_mediainfo$/;"	s
+main	P2P_FreeIp.c	/^int main(int argc, char** argv) $/;"	f
+msessionid	P2psdkapp.h	/^    int    msessionid;	$/;"	m	struct:m_mediainfo
+msgDataLen	P2PSDK.h	/^    unsigned short  msgDataLen;                  \/\/ 应用层消息体长度$/;"	m	struct:_NetMsgRes
+msgDataLen	P2PSDK.h	/^    unsigned short  msgDataLen;$/;"	m	struct:_NetMsg
+msgData	P2PSDK.h	/^	unsigned char   msgData[MAX_MSG_DATA_LEN];   \/\/  应用层消息体数据$/;"	m	struct:_NetMsgRes
+msgData	P2PSDK.h	/^	unsigned char   msgData[MAX_MSG_DATA_LEN]; $/;"	m	struct:_NetMsg
+msgType	P2PSDK.h	/^	unsigned short  msgType;$/;"	m	struct:_NetMsg
+msgType	P2PSDK.h	/^    unsigned short  msgType; \/\/ 消息类型$/;"	m	struct:_NetMsgRes
+reserved	P2PSDK.h	/^    unsigned char reserved[7]; \/\/ 保留$/;"	m	struct:__anon7
+resultCode	P2PSDK.h	/^    short           resultCode;  \/\/     返回结果代码$/;"	m	struct:__anon6
+run	P2psdkapp.h	/^    int    run;$/;"	m	struct:m_mediainfo
+startTime	P2PSDK.h	/^	unsigned    startTime;	     \/\/ 开始时间$/;"	m	struct:__anon10
+sthread	P2P_FreeIp.h	/^typedef void *(*sthread)(void*);$/;"	t
+streamType	P2PSDK.h	/^    short streamType;  \/\/ 1:主码流 2:副码流$/;"	m	struct:PlayRealStreamMsg
+streamType	P2PSDK.h	/^    short streamType;  \/\/ 1:主码流 2:副码流$/;"	m	struct:StopRealStreamMsg
+streamType	P2psdkapp.h	/^    short streamType;  \/\/ 1:主码流 2:副码流$/;"	m	struct:m_mediainfo
+timeStamp	P2PSDK.h	/^    unsigned int  timeStamp ; \/\/ 时间戳，从回放的开始时间经过的毫秒数$/;"	m	struct:__anon7
+ucI_SerialNum	P2P_FreeIp.h	/^	unsigned char ucI_SerialNum;\/\/I帧序列号，来一个I帧加一$/;"	m	struct:__anon3
+ucMessage	P2P_FreeIp.h	/^     unsigned char ucMessage;           \/\/              $/;"	m	struct:__anon4
+ucP_SerialNum	P2P_FreeIp.h	/^	unsigned char ucP_SerialNum;\/\/p帧序列号，来一个I帧清零$/;"	m	struct:__anon3
+ucPassWord	P2P_FreeIp.h	/^    unsigned char ucPassWord[16];$/;"	m	struct:__anon5
+ucSerialNum	P2P_FreeIp.h	/^    unsigned char ucSerialNum[16];$/;"	m	struct:__anon5
+ucState	P2P_FreeIp.h	/^     unsigned char ucState;                \/\/$/;"	m	struct:__anon4
+ucUsername	P2P_FreeIp.h	/^    unsigned char ucUsername[16];$/;"	m	struct:__anon5
+ulData	P2P_FreeIp.h	/^     unsigned long ulData;                 \/\/$/;"	m	struct:__anon4
+ulFlag	P2P_FreeIp.h	/^	unsigned long ulFlag; \/\/标志00 00 01 A5$/;"	m	struct:__anon3
+ulFlag	P2P_FreeIp.h	/^{   unsigned long ulFlag;                    \/\/  00 00 01 A6$/;"	m	struct:__anon4
+ulTimeStamp	P2P_FreeIp.h	/^	unsigned long ulTimeStamp;\/\/时间戳$/;"	m	struct:__anon3
+usCH	P2P_FreeIp.h	/^	unsigned short usCH;\/\/通道数$/;"	m	struct:__anon3
+usCmd	P2P_FreeIp.h	/^     unsigned short usCmd;                \/\/$/;"	m	struct:__anon4
+videoLen	P2PSDK.h	/^    unsigned int  videoLen;   \/\/ 视频帧长度 (不包括帧头)$/;"	m	struct:__anon7

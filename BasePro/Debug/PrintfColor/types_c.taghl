@@ -1,0 +1,3 @@
+syn keyword CTagsGlobalVariable fmt
+syn keyword CTagsDefinedName Printf
+
