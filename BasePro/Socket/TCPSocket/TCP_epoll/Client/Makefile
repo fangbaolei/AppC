@@ -1,15 +1,16 @@
 TARGET = Client 
-#cross compile
-CROSS_COMPILE = 
-CC = $(CROSS_COMPILE)gcc
-#flags
-CFLAGS = -Wall
-#source
-SRC = *.c 
-#object
-OBJECT=$(SRC:.c = .o)
-$(TARGET):$(OBJECT)
-	@$(CC) -o Client $(OBJECT) $(CFLAGS)
-#clean
+
+CFLAGS := -Wall -g -O2 -fPIC 
+
+#INCLUDE_PATH := -I../Src
+
+#LIB_PATH = ../Src/
+
+#LIB_FILE := $(LIB_PATH)Msg.a
+
+all:
+	#$(CC) $(CFLAGS) -o $(TARGET) TCPClient.c $(INCLUDE_PATH) $(LIB_FILE) 
+	$(CC) $(CFLAGS) -o $(TARGET) TCPClient.c 
+	@mv Client ../bin 
 clean:
-	@rm -f Client
+	rm  -rf  $(TARGET) *.o 

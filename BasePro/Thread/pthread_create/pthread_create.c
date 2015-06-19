@@ -23,6 +23,9 @@ int main(void)
     printf("TID in pthread_create function: %lu\n", pthid);
     printf("Main process: PID: %d,TID: %lu\n", getpid(), pthread_self()); 
     while(1); //race
+    {
+        sleep(10); 
+    }
     return 0;
 }
 
