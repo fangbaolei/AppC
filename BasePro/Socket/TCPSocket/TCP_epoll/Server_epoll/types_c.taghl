@@ -1,3 +1,0 @@
-syn keyword CTagsFunction main SetLimitFile Epoll_Ctrl setnonblocking TCP_Create handle Epoll_Cteate Epoll_Wait Socket_Create
-syn keyword CTagsDefinedName MAX_EPOLL_NUM MAX_LINE SERVER_PORT
-
