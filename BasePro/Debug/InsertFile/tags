@@ -1,0 +1,14 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+MAX_OUTPUT_COUNT	InsertFile.c	9;"	d	file:
+MA_ASSERT_FILE_FTP	InsertFile.c	13;"	d	file:
+MA_ASSERT_FILE_TXT	InsertFile.c	12;"	d	file:
+MA_ASSERT	InsertFile.c	14;"	d	file:
+g_szOutput	InsertFile.c	/^char g_szOutput[MAX_OUTPUT_COUNT][512];$/;"	v
+g_u32OutputStart	InsertFile.c	/^unsigned int g_u32OutputStart = 0;$/;"	v
+main	InsertFile.c	/^int main()$/;"	f
+test_assert	InsertFile.c	/^ test_assert()$/;"	f

@@ -13,11 +13,15 @@
 #include <string.h>
 
 #define MAX_EPOLL_NUM 10000 // 需要监听的个数
+#define MAX_LISTEM_NUM 1024 // 监听队列的个数
 #define MAX_LINE 10240
 #define SERVER_PORT 1234 
 
+#define TURE 1
+#define FALSE 0
+
 /************************
- *
+ * 任务处理
  **************************/
 int handle(int ConnectFd)
 {
@@ -58,14 +62,14 @@ int handle(int ConnectFd)
 /****************************
  *行数功能：注册新的fd到EpollFd
  *******************************/
-int Epoll_Ctrl(int EpollFd, int fd)
+int Epoll_Ctrl(int EpollFd, int ListenFd)
 {
     struct epoll_event ev;
-    ev.events = EPOLLIN | EPOLLET;
-    ev.data.fd = fd;
-    if (epoll_ctl(EpollFd, EPOLL_CTL_ADD, fd, &ev) < 0) 
+    ev.events = EPOLLIN | EPOLLET;// 将文件描述符设置成可读(EPOLLIN)和边缘触发(EPOLLET)的模式
+    ev.data.fd = ListenFd;
+    if (epoll_ctl(EpollFd, EPOLL_CTL_ADD, ListenFd, &ev) < 0)// 注册新的fd到EpollFd中 
     {
-        fprintf(stderr, "epoll set insertion error: fd=%d\n", fd);
+        fprintf(stderr, "epoll set insertion error: ListenFd=%d\n", ListenFd);
         return -1;
     }
     return 0;
@@ -76,13 +80,13 @@ int Epoll_Ctrl(int EpollFd, int fd)
  ****************************/ 
 int Socket_Create(struct sockaddr_in *servaddr)
 {
-    int ListenFd;
-    bzero(servaddr, sizeof(struct sockaddr_in));
+    int fd;
+    memset(servaddr, 0, sizeof(struct sockaddr_in));
     servaddr->sin_family = AF_INET; 
     servaddr->sin_addr.s_addr = htonl (INADDR_ANY);
     servaddr->sin_port = htons (SERVER_PORT);
-    ListenFd = socket(AF_INET, SOCK_STREAM, 0); 
-    return ListenFd;
+    fd = socket(AF_INET, SOCK_STREAM, 0); 
+    return fd;
 }
 
 /*********************************
@@ -90,28 +94,36 @@ int Socket_Create(struct sockaddr_in *servaddr)
 ********************************/
 int TCP_Create(int *ListenFd)
 {
-   int fd; 
-   int listenq = 1024;
-   int opt = 1;
+   int fd = -1; 
+   int opt = TURE;
    struct sockaddr_in servaddr;
+
    fd = Socket_Create(&servaddr);
    if (fd == -1) 
    {
        perror("can't create socket file");
        return -1;
    }
+
+   // SO_REUSEADDR:设置成端口复用，即可链接多个客户端
    setsockopt(fd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt));
-   if (fcntl(fd, F_SETFL, fcntl(fd, F_GETFD, 0)|O_NONBLOCK) == -1) 
+
+   // O_NONBLOCK:设置成非阻塞模式
+   if(fcntl(fd, F_SETFL, fcntl(fd, F_GETFD, 0)|O_NONBLOCK) == -1) 
    {
        perror("setnonblock error");
        return -1;
    }
-   if (bind(fd, (struct sockaddr *) &servaddr, sizeof(struct sockaddr)) == -1) 
+
+   //套接字与指定端口相连
+   if(bind(fd, (struct sockaddr *) &servaddr, sizeof(struct sockaddr)) == -1) 
    {
        perror("bind error");
        return -1;
    } 
-   if (listen(fd, listenq) == -1) 
+
+   // 监听请求
+   if(listen(fd, MAX_LISTEM_NUM) == -1) 
    {
        perror("listen error");
        return -1;
@@ -201,8 +213,11 @@ int Epoll_Wait(int EpollFd, int ListenFd)
                 continue;
             } 
 
-            // 处理客户端请求
-            if (handle(events[n].data.fd) < 0) 
+            /*
+             处理客户端请求
+             当读失败时，表示客户端连接已经断开，则删除fd
+             * */
+            if (handle(events[n].data.fd) < 0)
             {
                 epoll_ctl(EpollFd, EPOLL_CTL_DEL, events[n].data.fd,&ev);
                 curfds--;

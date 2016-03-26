@@ -1,0 +1,5 @@
+syn keyword CTagsStructure worker
+syn keyword CTagsGlobalVariable pool
+syn keyword CTagsFunction pool_add_worker pool_destroy pool_init thread_routine myprocess main
+syn keyword CTagsType CThread_pool CThread_worker
+

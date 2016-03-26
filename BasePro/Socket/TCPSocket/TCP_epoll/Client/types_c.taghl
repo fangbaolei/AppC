@@ -1,3 +1,0 @@
-syn keyword CTagsFunction main
-syn keyword CTagsDefinedName PORT SERVER_IP
-

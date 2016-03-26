@@ -1,0 +1,42 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CC	Makefile	/^CC = $(CROSS_COMPILE)gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -lpthread$/;"	m
+CROSS_COMPILE	Makefile	/^CROSS_COMPILE = $/;"	m
+CThread_pool	pthread_pool.c	/^}CThread_pool;$/;"	t	typeref:struct:__anon1	file:
+CThread_worker	pthread_pool.c	/^}CThread_worker;$/;"	t	typeref:struct:worker	file:
+OBJECT	Makefile	/^OBJECT=$(SRC:.c = .o)$/;"	m
+SRC	Makefile	/^SRC = *.c $/;"	m
+TARGET	Makefile	/^TARGET = pthread_pool$/;"	m
+__anon1::cur_queue_size	pthread_pool.c	/^		int cur_queue_size;$/;"	m	struct:__anon1	file:	access:public
+__anon1::max_thread_num	pthread_pool.c	/^		int max_thread_num;$/;"	m	struct:__anon1	file:	access:public
+__anon1::queue_head	pthread_pool.c	/^		CThread_worker *queue_head;$/;"	m	struct:__anon1	file:	access:public
+__anon1::queue_lock	pthread_pool.c	/^		pthread_mutex_t queue_lock;$/;"	m	struct:__anon1	file:	access:public
+__anon1::queue_ready	pthread_pool.c	/^		pthread_cond_t queue_ready;$/;"	m	struct:__anon1	file:	access:public
+__anon1::shutdown	pthread_pool.c	/^		int shutdown;$/;"	m	struct:__anon1	file:	access:public
+__anon1::threadid	pthread_pool.c	/^		pthread_t *threadid;$/;"	m	struct:__anon1	file:	access:public
+arg	pthread_pool.c	/^		void *arg;$/;"	m	struct:worker	file:	access:public
+cur_queue_size	pthread_pool.c	/^		int cur_queue_size;$/;"	m	struct:__anon1	file:	access:public
+main	pthread_pool.c	/^int main (int argc, char **argv)                             $/;"	f	signature:(int argc, char **argv)
+max_thread_num	pthread_pool.c	/^		int max_thread_num;$/;"	m	struct:__anon1	file:	access:public
+myprocess	pthread_pool.c	/^void * myprocess (void *arg)$/;"	f	signature:(void *arg)
+next	pthread_pool.c	/^		struct worker *next;$/;"	m	struct:worker	typeref:struct:worker::worker	file:	access:public
+pool	pthread_pool.c	/^static CThread_pool *pool = NULL;$/;"	v	file:
+pool_add_worker	pthread_pool.c	/^int pool_add_worker (void *(*process) (void *arg), void *arg)$/;"	f	signature:(void *(*process) (void *arg), void *arg)
+pool_destroy	pthread_pool.c	/^int pool_destroy ()$/;"	f
+pool_init	pthread_pool.c	/^void pool_init(int max_thread_num)$/;"	f	signature:(int max_thread_num)
+process	pthread_pool.c	/^		void *(*process)(void *arg);$/;"	m	struct:worker	file:	access:public
+queue_head	pthread_pool.c	/^		CThread_worker *queue_head;$/;"	m	struct:__anon1	file:	access:public
+queue_lock	pthread_pool.c	/^		pthread_mutex_t queue_lock;$/;"	m	struct:__anon1	file:	access:public
+queue_ready	pthread_pool.c	/^		pthread_cond_t queue_ready;$/;"	m	struct:__anon1	file:	access:public
+shutdown	pthread_pool.c	/^		int shutdown;$/;"	m	struct:__anon1	file:	access:public
+thread_routine	pthread_pool.c	/^void * thread_routine(void *arg)$/;"	f	signature:(void *arg)
+threadid	pthread_pool.c	/^		pthread_t *threadid;$/;"	m	struct:__anon1	file:	access:public
+worker	pthread_pool.c	/^typedef struct worker$/;"	s	file:
+worker::arg	pthread_pool.c	/^		void *arg;$/;"	m	struct:worker	file:	access:public
+worker::next	pthread_pool.c	/^		struct worker *next;$/;"	m	struct:worker	typeref:struct:worker::worker	file:	access:public
+worker::process	pthread_pool.c	/^		void *(*process)(void *arg);$/;"	m	struct:worker	file:	access:public

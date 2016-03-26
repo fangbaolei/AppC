@@ -1,0 +1,3 @@
+syn keyword CTagsFunction main SetLimitFile Epoll_Ctrl TCP_Create handle Epoll_Cteate Epoll_Wait Socket_Create
+syn keyword CTagsDefinedName FALSE SERVER_PORT MAX_LINE SERVER_IP MAX_EPOLL_NUM TURE MAX_LISTEM_NUM PORT
+
