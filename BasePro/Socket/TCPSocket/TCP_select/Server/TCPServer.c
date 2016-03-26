@@ -20,8 +20,8 @@ typedef void *(*CallBackTread)(void*);
 int P2P_CreatThread(CallBackTread func)
 {
 	int iRet=0;
-       pthread_t		 threadID;
-    	pthread_attr_t   attr;	
+    pthread_t		 threadID;
+    pthread_attr_t   attr;	
 	pthread_attr_init(&attr);	
 	pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_DETACHED);
 	iRet=pthread_create(&threadID,&attr,func,NULL);
